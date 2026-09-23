@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-light: #fff8f9;
+    --color-pink-soft: #fdf2f4;
+    --color-pink-blush: #fce7ec;
+    --color-pink-accent: #e11d48;
+    --color-pink-vibrant: #ec4899;
+    --color-pink-deep: #be185d;
+    --color-pink-dark: #831843;
+    --color-cream: #fffdfa;
+    --color-charcoal: #2a1520;
+    --color-gold: #f59e0b;
+  }
+
+  body {
+    background-color: #fff9fa;
+    color: #2a1520;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif-bakery {
+    font-family: 'Fraunces', Georgia, serif;
+    font-optical-sizing: auto;
+  }
+
+  .font-script {
+    font-family: 'Satisfy', cursive;
+  }
+}
+
+/* Custom subtle scrollbar in soft rose pink */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fdf2f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #f4b5c7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e288a2;
+}
+
+@keyframes gentle-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+.animate-gentle {
+  animation: gentle-pulse 3s infinite ease-in-out;
+}
+
+@keyframes steam-drift {
+  0% { transform: translateY(0px) scale(0.9); opacity: 0; }
+  50% { opacity: 0.6; }
+  100% { transform: translateY(-16px) scale(1.2); opacity: 0; }
+}
+
+.animate-steam {
+  animation: steam-drift 2.5s infinite ease-out;
+}

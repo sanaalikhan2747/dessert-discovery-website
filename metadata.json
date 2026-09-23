@@ -1,0 +1,7 @@
+{
+  "name": "BakeMatch - AI Homemade Dessert Discovery",
+  "description": "Discover your perfect homemade dessert experience with BakeMatch. AI-powered dessert matchmaker, custom box builder, surprise cravings, artisan stories, and personal AI baker concierge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
